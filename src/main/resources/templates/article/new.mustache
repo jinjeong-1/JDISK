@@ -1,0 +1,15 @@
+{{>library/header}}
+
+<form class="container" action="/article/create" method="post"> <!--//action은 어디로보낼지 method는 어떻게 보낼지(get/post)-->
+    <div class="mb-3">
+        <label class="form-label">제목</label>
+        <input type="text" class="form-control" name="title"> <!-- name이라는 속성에 title을 넣어줘야 받아온다. //dto에 선언한 변수값 -->
+    </div>
+    <div>
+        <label class="form-label">내용</label>
+        <textarea class="form-control" rows="3" name="content"></textarea> <!-- name이라는 속성에 content를 넣어줘야 받아온다. // dto에 선언한 변수값 -->
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+</form>
+
+{{>library/footer}}
